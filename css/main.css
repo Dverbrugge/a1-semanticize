@@ -2,11 +2,24 @@ body {
 	background:url(../images/bg1.gif);
 	font:13px verdana, arial, sans-serif;
 	color:#333;
-}
 
+}
+	
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('architectsdaughter-webfont.eot');
+    src: url('architectsdaughter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('architectsdaughter-webfont.woff') format('woff'),
+         url('architectsdaughter-webfont.ttf') format('truetype'),
+         url('architectsdaughter-webfont.svg#architects_daughterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 h1 {
-	font:34px georgia, "Times New Roman", Times, serif;
+	font-family: "architectsdaughter-webfont";
 	color:#333;
+	text-shadow: 5px 5px 5px #FF0000;
 }
 
 h2 {
@@ -52,7 +65,9 @@ form label {font-weight:bold;}
 
 /* Main container and header area 
 -----------------------------------------*/
-
+header, section, footer, aside, nav, article, figure { 
+ display: block;
+}
 #container {
 	position:relative;
 	margin:10px auto 010px auto;
@@ -64,7 +79,7 @@ form label {font-weight:bold;}
 	border:1px solid #CCC;
 }
 
-#header {
+header {
 	float:left;
 	width:960px;
 	height:140px;
@@ -77,7 +92,7 @@ form label {font-weight:bold;}
 	text-indent:-9999px;
 }
 
-#header h1 {
+header h1 {
 	position:absolute;
 	top:70px; left:100px;
 	z-index:2;	
@@ -129,7 +144,7 @@ form label {font-weight:bold;}
 	float:left;
 	width:600px;
 }
-#sidebar {
+aside {
 	float:right;
 	width:250px;
 	padding: 20px 10px; margin-top:20px	;
@@ -143,7 +158,7 @@ form label {font-weight:bold;}
 /* Footer and social media links
 -------------------------------*/
 
-#footer {
+footer {
 	clear:both;
 	width:900px;
 	text-align:center;
